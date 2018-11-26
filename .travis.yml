@@ -1,2 +1,10 @@
+env:
+  - GODOT_URL=https://downloads.tuxfamily.org/godotengine/3.0.6/Godot_v3.0.6-stable_linux_headless.64.zip
+  - GODOT_ZIP=Godot_v3.0.6-stable_linux_headless.64.zip
+  - GODOT_BIN=./Godot_v3.0.6-stable_linux_headless.64
 language: minimal
-script: ./godot -d -s --path ./project addons/gut/gut_cmdln.gd -gdir=res://test -ginclude_subdirs -gexit
+before_install:
+  - curl $GODOT_URL --output $GODOT_ZIP
+  - unzip $GODOT_ZIP
+script:
+  - $GODOT_BIN -d -s --path ./project addons/gut/gut_cmdln.gd -gdir=res://test -ginclude_subdirs -gexit
