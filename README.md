@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/saltares/godot-ci-example.svg?branch=master)](https://travis-ci.org/saltares/godot-ci-example)
+[![Build Status](https://travis-ci.org/dsaltares/godot-ci-example.svg?branch=master)](https://travis-ci.org/dsaltares/godot-ci-example)
 
 # Godot CI Example
 
